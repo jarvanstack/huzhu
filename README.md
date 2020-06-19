@@ -26,9 +26,10 @@ Java基础|Java基础
 MySQL|MySQL 5.7.30
 jsp|最少代码的jsp
 #### 2. 开发工具
+
 工具名|作用|官网下载链接
---|--|--
-IDEA|开发IDE|	https://www.jetbrains.com/idea/download
+|--|--|--|
+IDEA|开发IDE|https://www.jetbrains.com/idea/download
 SQLYog|数据库工具|https://www.webyog.com/
 diagrams.net|图形设计工具|https://app.diagrams.net/index.html
 Snipaste|截图工具|https://www.snipaste.com/
