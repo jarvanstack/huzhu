@@ -11,7 +11,35 @@
         <filter-name>EncodingFilter</filter-name>
         <url-pattern>/*</url-pattern>
     </filter-mapping>
+    <!--过滤sys文件下的未登录玩家-->
+    <filter>
+        <filter-name>LoginFilter</filter-name>
+        <filter-class>com.huzhu.filter.LoginFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>LoginFilter</filter-name>
+        <url-pattern>/sys/*</url-pattern>
+    </filter-mapping>
     <listener>
         <listener-class>com.huzhu.filter.OnlineUserListener</listener-class>
     </listener>
+    <!--LoginServlet login.jsp点击登录点击时候的-->
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.huzhu.servlet.login.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+    <!--LogOffServlet homePage.jsp 点击注销执行-->
+    <servlet>
+        <servlet-name>LogOffServlet</servlet-name>
+        <servlet-class>com.huzhu.servlet.login.LogOffServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogOffServlet</servlet-name>
+        <url-pattern>/LogOffServlet</url-pattern>
+    </servlet-mapping>
+
 </web-app>

@@ -14,6 +14,14 @@ public class HuZhu_User {
     private int user_role_id;//权限id，用户2
     private int age;//年龄可计算出来
 
+    @Override
+    public String toString() {
+        return "HuZhu_User{" +
+                "id=" + id +
+                ", log_name='" + log_name + '\'' +
+                ", name='" + name + '\'' +
+                '}';
+    }
 
     public Integer getId() {
         return id;
