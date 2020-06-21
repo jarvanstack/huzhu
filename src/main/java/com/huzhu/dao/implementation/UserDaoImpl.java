@@ -23,13 +23,16 @@ public class UserDaoImpl implements UserDao {
                 huZhu_user = new HuZhu_User();
                 huZhu_user.setId(resultSet.getInt("id"));
                 huZhu_user.setLog_name(resultSet.getString("log_name"));
+                huZhu_user.setName(resultSet.getString("name"));
                 huZhu_user.setPassword(resultSet.getString("password"));
+                huZhu_user.setGengder(resultSet.getString("gender"));
                 huZhu_user.setBirth(resultSet.getDate("birth"));
                 huZhu_user.setAdddress(resultSet.getString("address"));
                 huZhu_user.setMail_box(resultSet.getString("mail_box"));
                 huZhu_user.setUser_role_id(resultSet.getInt("user_role_id"));
             }
         }
+        System.out.println(huZhu_user);
         return huZhu_user;
     }
 }
